@@ -2,6 +2,13 @@
   "name": "ICIS Community Registry",
   "packages": [
     {
+      "name": "AssetStudioMod",
+      "version": "latest",
+      "desc": "Unity asset viewer and extractor tool (GUI edition)",
+      "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/AssetStudioMod.ici",
+      "homepage": ""
+    },
+    {
       "name": "Isam's AU Launcher",
       "version": "latest",
       "desc": "A free amongus launcher",
@@ -9,10 +16,31 @@
       "homepage": ""
     },
     {
+      "name": "LosslessCut",
+      "version": "latest",
+      "desc": "Swiss army knife of lossless video and audio editing",
+      "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/LosslessCut.ici",
+      "homepage": ""
+    },
+    {
       "name": "MPV 0.41.0",
       "version": "0.41.0",
       "desc": "Media player",
       "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/MPV 0.41.0.ici",
+      "homepage": ""
+    },
+    {
+      "name": "Sumatra PDF",
+      "version": "latest",
+      "desc": "Ultra-fast and lightweight PDF reader",
+      "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/Sumatra PDF.ici",
+      "homepage": ""
+    },
+    {
+      "name": "UABEA",
+      "version": "latest",
+      "desc": "Unity Asset Bundle/Serialized File reader and writer with GUI",
+      "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/UABEA.ici",
       "homepage": ""
     },
     {
