@@ -1,0 +1,8 @@
+name: AssetStudioMod
+version: latest
+desc: Unity asset viewer and extractor tool (GUI edition)
+url: https://github.com/aelurum/AssetStudio/releases/latest/download/AssetStudioModGUI_net6_win64.zip
+type: zip
+install_dir: appdata
+shortcuts: AssetStudioModGUI.exe=AssetStudioMod
+startup: false

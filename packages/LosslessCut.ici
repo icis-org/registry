@@ -1,0 +1,8 @@
+name: LosslessCut
+version: latest
+desc: Swiss army knife of lossless video and audio editing
+url: https://github.com/mifi/lossless-cut/releases/latest/download/LosslessCut-win-x64.zip
+type: zip
+install_dir: appdata
+shortcuts: LosslessCut.exe=LosslessCut
+startup: falses

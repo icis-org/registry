@@ -1,0 +1,8 @@
+name: UABEA
+version: latest
+desc: Unity Asset Bundle/Serialized File reader and writer with GUI
+url: https://github.com/nesrak1/UABEA/releases/latest/download/UABEAvalonia-win-x64.zip
+type: zip
+install_dir: appdata
+shortcuts: UABEAvalonia.exe=UABEA
+startup: false

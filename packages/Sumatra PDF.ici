@@ -1,0 +1,8 @@
+name: Sumatra PDF
+version: latest
+desc: Ultra-fast and lightweight PDF reader
+url: https://github.com/sumatrapdfreader/sumatrapdf/releases/latest/download/SumatraPDF-x64.zip
+type: zip
+install_dir: appdata
+shortcuts: SumatraPDF.exe=Sumatra PDF
+startup: false
