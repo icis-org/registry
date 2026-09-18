@@ -1,4 +1,12 @@
 {
   "name": "ICIS Community Registry",
-  "packages": []
+  "packages": [
+    {
+      "name": "testdisk",
+      "version": "7.2",
+      "desc": "Data recovery tool",
+      "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/testdisk.ici",
+      "homepage": "https://www.cgsecurity.org/wiki/TestDisk"
+    }
+  ]
 }
