@@ -1,7 +1,7 @@
 name: Sumatra PDF
-version: latest
+version: 3.6.1
 desc: Ultra-fast and lightweight PDF reader
-url: https://github.com/sumatrapdfreader/sumatrapdf/releases/latest/download/SumatraPDF-x64.zip
+url: https://sourceforge.net/projects/sumatrapdf-reader.mirror/files/3.6.1rel/SumatraPDF-3.6.1-64.zip
 type: zip
 install_dir: appdata
 shortcuts: SumatraPDF.exe=Sumatra PDF
