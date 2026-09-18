@@ -2,6 +2,27 @@
   "name": "ICIS Community Registry",
   "packages": [
     {
+      "name": "Isam's AU Launcher",
+      "version": "latest",
+      "desc": "A free amongus launcher",
+      "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/Isam's AU Launcher.ici",
+      "homepage": ""
+    },
+    {
+      "name": "MPV 0.41.0",
+      "version": "0.41.0",
+      "desc": "Media player",
+      "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/MPV 0.41.0.ici",
+      "homepage": ""
+    },
+    {
+      "name": "Wiztree 4.33",
+      "version": "4.33",
+      "desc": "The FASTEST Disk Space Analyzer",
+      "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/Wiztree 4.33.ici",
+      "homepage": ""
+    },
+    {
       "name": "testdisk",
       "version": "7.2",
       "desc": "Data recovery tool",
