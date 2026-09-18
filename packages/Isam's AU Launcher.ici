@@ -1,0 +1,8 @@
+name: Isam's AU Launcher
+version: latest
+desc: A free amongus launcher
+url: https://github.com/isam-ahmed0/Isam-AULauncher/releases/latest/download/IsamAU-All.zip
+type: zip
+install_dir: appdata
+shortcuts: IsamAULauncher/IsamAULauncher.exe=Isam's AULauncher, itch_Login_Fixer/itch_Login_Fixer.exe=Itch Login Fixer
+startup: true

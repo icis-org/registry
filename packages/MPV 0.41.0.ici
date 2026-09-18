@@ -1,0 +1,8 @@
+name: MPV 0.41.0
+version: 0.41.0
+desc: Media player
+url: https://github.com/mpv-player/mpv/releases/download/v0.41.0/mpv-v0.41.0-x86_64-pc-windows-msvc.zip
+type: zip
+install_dir: appdata
+shortcuts: mpv.exe=MPV Player
+startup: false
