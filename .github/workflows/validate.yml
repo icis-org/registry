@@ -1,0 +1,113 @@
+name: Validate PR
+
+on:
+  pull_request:
+    paths:
+      - 'packages/*.ici'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check only packages/ touched
+        run: |
+          CHANGED=$(git diff --name-only origin/${{ github.base_ref }}...HEAD)
+          NON_PKG=$(echo "$CHANGED" | grep -v '^packages/' || true)
+          if [ -n "$NON_PKG" ]; then
+            echo "ERROR: Only packages/*.ici files are allowed."
+            echo "Changed outside packages/:"
+            echo "$NON_PKG"
+            exit 1
+          fi
+
+      - name: Count new packages
+        run: |
+          NEW_FILES=$(git diff --diff-filter=A --name-only origin/${{ github.base_ref }}...HEAD -- 'packages/*.ici' | wc -l)
+          if [ "$NEW_FILES" -gt 5 ]; then
+            echo "ERROR: Max 5 new packages per PR. Got $NEW_FILES."
+            exit 1
+          fi
+
+      - name: Validate .ici files
+        run: |
+          ERRORS=""
+          NAMES=""
+          for f in packages/*.ici; do
+            [ -f "$f" ] || continue
+
+            CONTENT=$(cat "$f")
+
+            # Required: name
+            NAME=$(echo "$CONTENT" | grep -i '^name:' | head -1 | sed 's/^name:[[:space:]]*//')
+            if [ -z "$NAME" ]; then
+              ERRORS="$ERRORS\n$f: missing required field 'name'"
+              continue
+            fi
+
+            # Name format: lowercase alphanumeric + hyphens
+            if ! echo "$NAME" | grep -qE '^[a-z0-9][a-z0-9-]*$'; then
+              ERRORS="$ERRORS\n$f: name '$NAME' must be lowercase alphanumeric with hyphens only"
+            fi
+
+            # Duplicate check
+            if echo "$NAMES" | grep -q "^${NAME}$"; then
+              ERRORS="$ERRORS\n$f: duplicate name '$NAME'"
+            fi
+            NAMES="$NAMES
+$NAME"
+
+            # Required: url
+            URL=$(echo "$CONTENT" | grep -i '^url:' | head -1 | sed 's/^url:[[:space:]]*//')
+            if [ -z "$URL" ]; then
+              ERRORS="$ERRORS\n$f: missing required field 'url'"
+              continue
+            fi
+
+            # URL must be https
+            if ! echo "$URL" | grep -qE '^https://'; then
+              ERRORS="$ERRORS\n$f: url must use https://"
+            fi
+
+            # URL reachability (HEAD request, 10s timeout)
+            HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" --max-time 10 -I "$URL" 2>/dev/null || echo "000")
+            if [ "$HTTP_CODE" = "000" ]; then
+              ERRORS="$ERRORS\n$f: url unreachable (timeout or DNS failure)"
+            elif [ "$HTTP_CODE" -ge 400 ]; then
+              ERRORS="$ERRORS\n$f: url returned HTTP $HTTP_CODE"
+            fi
+
+            # shortcuts: safety checks
+            SHORTCUTS=$(echo "$CONTENT" | grep -i '^shortcuts:' | sed 's/^shortcuts:[[:space:]]*//')
+            if [ -n "$SHORTCUTS" ]; then
+              IFS=',' read -ra ENTRIES <<< "$SHORTCUTS"
+              for entry in "${ENTRIES[@]}"; do
+                EXE=$(echo "$entry" | sed 's/=.*//' | xargs)
+                if echo "$EXE" | grep -qE '^\.'; then
+                  ERRORS="$ERRORS\n$f: shortcuts exe cannot start with .."
+                fi
+                if echo "$EXE" | grep -qE '^/'; then
+                  ERRORS="$ERRORS\n$f: shortcuts exe cannot be absolute path"
+                fi
+              done
+            fi
+
+            # File size check (5KB max)
+            SIZE=$(wc -c < "$f")
+            if [ "$SIZE" -gt 5120 ]; then
+              ERRORS="$ERRORS\n$f: file too large (${SIZE} bytes, max 5120)"
+            fi
+          done
+
+          if [ -n "$ERRORS" ]; then
+            echo -e "Validation errors:\n$ERRORS"
+            exit 1
+          fi
+
+          echo "All packages validated successfully."
