@@ -1,0 +1,8 @@
+name: FastCopy
+version: latest
+desc: The fastest copy/delete software on Windows
+url: https://fastcopy.jp/pub/FastCopy5.7.15_x64.zip
+type: zip
+install_dir: appdata
+shortcuts: FastCopy.exe=FastCopy
+startup: false

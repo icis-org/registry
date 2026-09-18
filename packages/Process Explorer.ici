@@ -1,0 +1,8 @@
+name: Process Explorer
+version: latest
+desc: Advanced task manager showing file handle and DLL information
+url: https://download.sysinternals.com/files/ProcessExplorer.zip
+type: zip
+install_dir: appdata
+shortcuts: procexp.exe=Process Explorer, procexp64.exe=Process Explorer x64
+startup: false
