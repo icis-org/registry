@@ -31,7 +31,7 @@
     },
     {
       "name": "Sumatra PDF",
-      "version": "latest",
+      "version": "3.6.1",
       "desc": "Ultra-fast and lightweight PDF reader",
       "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/Sumatra PDF.ici",
       "homepage": ""
