@@ -9,6 +9,13 @@
       "homepage": ""
     },
     {
+      "name": "FastCopy",
+      "version": "latest",
+      "desc": "The fastest copy/delete software on Windows",
+      "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/FastCopy.ici",
+      "homepage": ""
+    },
+    {
       "name": "Isam's AU Launcher",
       "version": "latest",
       "desc": "A free amongus launcher",
@@ -27,6 +34,13 @@
       "version": "0.41.0",
       "desc": "Media player",
       "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/MPV 0.41.0.ici",
+      "homepage": ""
+    },
+    {
+      "name": "Process Explorer",
+      "version": "latest",
+      "desc": "Advanced task manager showing file handle and DLL information",
+      "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/Process Explorer.ici",
       "homepage": ""
     },
     {
