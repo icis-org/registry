@@ -1,0 +1,8 @@
+name: RPCS3
+version: latest
+desc: Open-source PlayStation 3 emulator and debugger
+url: https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-f4a74819d385f8638c3b09c1c0ad9e3a5eb53ce0/rpcs3-v0.0.42-20023-f4a74819_win64_msvc.7z
+type: 7z
+install_dir: appdata
+shortcuts: rpcs3.exe=RPCS3
+startup: false
