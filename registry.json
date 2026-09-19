@@ -16,9 +16,16 @@
       "homepage": ""
     },
     {
+      "name": "HakuNeko",
+      "version": "latest",
+      "desc": "Standalone manga and anime downloader app",
+      "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/HakuNeko.ici",
+      "homepage": ""
+    },
+    {
       "name": "Isam's AU Launcher",
       "version": "latest",
-      "desc": "A free amongus launcher",
+      "desc": "Play Among Us in pc for free. Itch.io build. Not an emulator.",
       "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/Isam's AU Launcher.ici",
       "homepage": ""
     },
@@ -44,6 +51,13 @@
       "homepage": ""
     },
     {
+      "name": "RPCS3",
+      "version": "latest",
+      "desc": "Open-source PlayStation 3 emulator and debugger",
+      "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/RPCS3.ici",
+      "homepage": ""
+    },
+    {
       "name": "Sumatra PDF",
       "version": "3.6.1",
       "desc": "Ultra-fast and lightweight PDF reader",
@@ -58,10 +72,24 @@
       "homepage": ""
     },
     {
+      "name": "Ventoy",
+      "version": "latest",
+      "desc": "Tool to create bootable USB drives simply by copying ISO files",
+      "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/Ventoy.ici",
+      "homepage": ""
+    },
+    {
       "name": "Wiztree 4.33",
       "version": "4.33",
       "desc": "The FASTEST Disk Space Analyzer",
       "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/Wiztree 4.33.ici",
+      "homepage": ""
+    },
+    {
+      "name": "dnSpy",
+      "version": "latest",
+      "desc": "Reverse engineering tool and assembly editor for .NET binaries",
+      "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/dnSpy.ici",
       "homepage": ""
     },
     {
