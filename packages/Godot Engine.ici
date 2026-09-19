@@ -1,0 +1,8 @@
+name: Godot Engine
+version: latest
+desc: Free, open-source 2D/3D game engine editor
+url: https://github.com/godotengine/godot/releases/latest/download/Godot_v4.3-stable_win64.exe.zip
+type: zip
+install_dir: appdata
+shortcuts: Godot_v4.3-stable_win64.exe=Godot Engine
+startup: false
