@@ -16,6 +16,13 @@
       "homepage": ""
     },
     {
+      "name": "Cinebench R23",
+      "version": "23.200",
+      "desc": "Cross-platform CPU rendering hardware benchmark tool",
+      "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/Cinebench R23.ici",
+      "homepage": ""
+    },
+    {
       "name": "FastCopy",
       "version": "latest",
       "desc": "The fastest copy/delete software on Windows",
@@ -58,6 +65,13 @@
       "homepage": ""
     },
     {
+      "name": "Mangayomi",
+      "version": "latest",
+      "desc": "Multi-platform manga and anime app with extension support",
+      "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/Mangayomi.ici",
+      "homepage": ""
+    },
+    {
       "name": "Process Explorer",
       "version": "latest",
       "desc": "Advanced task manager showing file handle and DLL information",
@@ -69,6 +83,13 @@
       "version": "latest",
       "desc": "Open-source PlayStation 3 emulator and debugger",
       "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/RPCS3.ici",
+      "homepage": ""
+    },
+    {
+      "name": "Rufus",
+      "version": "latest",
+      "desc": "Standalone utility to format and create bootable USB flash drives",
+      "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/Rufus.ici",
       "homepage": ""
     },
     {
@@ -119,6 +140,13 @@
       "desc": "Data recovery tool",
       "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/testdisk.ici",
       "homepage": "https://www.cgsecurity.org/wiki/TestDisk"
+    },
+    {
+      "name": "yt-dlp",
+      "version": "latest",
+      "desc": "Feature-rich command-line audio and video downloader",
+      "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/yt-dlp.ici",
+      "homepage": ""
     }
   ]
 }
