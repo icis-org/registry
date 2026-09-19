@@ -93,6 +93,13 @@
       "homepage": ""
     },
     {
+      "name": "Subtitle Edit",
+      "version": "latest",
+      "desc": "Open-source editor for video subtitles",
+      "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/Subtitle Edit.ici",
+      "homepage": ""
+    },
+    {
       "name": "Sumatra PDF",
       "version": "3.6.1",
       "desc": "Ultra-fast and lightweight PDF reader",
@@ -140,6 +147,13 @@
       "desc": "Data recovery tool",
       "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/testdisk.ici",
       "homepage": "https://www.cgsecurity.org/wiki/TestDisk"
+    },
+    {
+      "name": "x64dbg",
+      "version": "latest",
+      "desc": "Open-source x64/x32 binary debugger for Windows",
+      "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/x64dbg.ici",
+      "homepage": ""
     },
     {
       "name": "yt-dlp",
