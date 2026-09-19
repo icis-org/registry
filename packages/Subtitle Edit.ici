@@ -1,0 +1,8 @@
+name: Subtitle Edit
+version: latest
+desc: Open-source editor for video subtitles
+url: https://github.com/SubtitleEdit/subtitleedit/releases/download/4.0.8/SE408.zip
+type: zip
+install_dir: appdata
+shortcuts: SubtitleEdit.exe=Subtitle Edit
+startup: false

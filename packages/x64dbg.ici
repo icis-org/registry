@@ -1,0 +1,8 @@
+name: x64dbg
+version: latest
+desc: Open-source x64/x32 binary debugger for Windows
+url: https://github.com/x64dbg/x64dbg/releases/latest/download/snapshot_2024-01-01_00-00.zip
+type: zip
+install_dir: appdata
+shortcuts: release/x96dbg.exe=x96dbg, release/x64/x64dbg.exe=x64dbg
+startup: false
