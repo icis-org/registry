@@ -1,0 +1,8 @@
+name: Cinebench R23
+version: 23.200
+desc: Cross-platform CPU rendering hardware benchmark tool
+url: https://cgtools.com/downloads/cinebench_r23.rar
+type: rar
+install_dir: appdata
+shortcuts: Cinebench.exe=Cinebench R23
+startup: false

@@ -1,0 +1,8 @@
+name: Rufus
+version: latest
+desc: Standalone utility to format and create bootable USB flash drives
+url: https://github.com/pbatard/rufus/releases/download/v4.5/rufus-4.5p.exe
+type: exe
+install_dir: appdata
+shortcuts: rufus-4.5p.exe=Rufus Portable
+startup: false
