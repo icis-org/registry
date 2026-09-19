@@ -1,0 +1,8 @@
+name: Mangayomi
+version: latest
+desc: Multi-platform manga and anime app with extension support
+url: https://github.com/kodjodevf/mangayomi/releases/latest/download/mangayomi-windows.zip
+type: zip
+install_dir: appdata
+shortcuts: mangayomi.exe=Mangayomi
+startup: false

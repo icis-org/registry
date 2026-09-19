@@ -1,0 +1,8 @@
+name: yt-dlp
+version: latest
+desc: Feature-rich command-line audio and video downloader
+url: https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe
+type: exe
+install_dir: appdata
+shortcuts: yt-dlp.exe=yt-dlp CLI
+startup: false
