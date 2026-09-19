@@ -1,0 +1,8 @@
+name: AssetRipper
+version: latest
+desc: Tool for extracting assets, scripts, and models from Unity games
+url: https://github.com/AssetRipper/AssetRipper/releases/latest/download/AssetRipper_win_x64.zip
+type: zip
+install_dir: appdata
+shortcuts: AssetRipper.exe=AssetRipper
+startup: false

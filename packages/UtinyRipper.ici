@@ -1,0 +1,8 @@
+name: UtinyRipper
+version: latest
+desc: Standalone GUI tool for extracting assets and structure from Unity game files
+url: https://github.com/mafaca/UtinyRipper/releases/latest/download/UtinyRipper_x64.zip
+type: zip
+install_dir: appdata
+shortcuts: UtinyRipper.exe=UtinyRipper
+startup: false
