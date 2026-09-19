@@ -1,6 +1,6 @@
 name: Isam's AU Launcher
 version: latest
-desc: A free amongus launcher
+desc: Play Among Us in pc for free. Itch.io build. Not an emulator.
 url: https://github.com/isam-ahmed0/Isam-AULauncher/releases/latest/download/IsamAU-All.zip
 type: zip
 install_dir: appdata

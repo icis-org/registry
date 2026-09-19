@@ -1,0 +1,8 @@
+name: HakuNeko
+version: latest
+desc: Standalone manga and anime downloader app
+url: https://github.com/manga-download/hakuneko/releases/download/v6.1.7/hakuneko-desktop_6.1.7_windows-portable_amd64.zip
+type: zip
+install_dir: appdata
+shortcuts: hakuneko-app.exe=HakuNeko
+startup: false

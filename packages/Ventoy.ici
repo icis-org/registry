@@ -1,0 +1,8 @@
+name: Ventoy
+version: latest
+desc: Tool to create bootable USB drives simply by copying ISO files
+url: https://github.com/ventoy/Ventoy/releases/latest/download/ventoy-1.0.99-windows.zip
+type: zip
+install_dir: appdata
+shortcuts: Ventoy2Disk.exe=Ventoy GUI
+startup: false

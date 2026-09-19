@@ -1,0 +1,8 @@
+name: dnSpy
+version: latest
+desc: Reverse engineering tool and assembly editor for .NET binaries
+url: https://github.com/dnSpy/dnSpy/releases/latest/download/dnSpy-net-win64.zip
+type: zip
+install_dir: appdata
+shortcuts: dnSpy.exe=dnSpy
+startup: false
