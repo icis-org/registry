@@ -2,6 +2,13 @@
   "name": "ICIS Community Registry",
   "packages": [
     {
+      "name": "AssetRipper",
+      "version": "latest",
+      "desc": "Tool for extracting assets, scripts, and models from Unity games",
+      "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/AssetRipper.ici",
+      "homepage": ""
+    },
+    {
       "name": "AssetStudioMod",
       "version": "latest",
       "desc": "Unity asset viewer and extractor tool (GUI edition)",
@@ -13,6 +20,13 @@
       "version": "latest",
       "desc": "The fastest copy/delete software on Windows",
       "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/FastCopy.ici",
+      "homepage": ""
+    },
+    {
+      "name": "Godot Engine",
+      "version": "latest",
+      "desc": "Free, open-source 2D/3D game engine editor",
+      "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/Godot Engine.ici",
       "homepage": ""
     },
     {
@@ -69,6 +83,13 @@
       "version": "latest",
       "desc": "Unity Asset Bundle/Serialized File reader and writer with GUI",
       "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/UABEA.ici",
+      "homepage": ""
+    },
+    {
+      "name": "UtinyRipper",
+      "version": "latest",
+      "desc": "Standalone GUI tool for extracting assets and structure from Unity game files",
+      "ici": "https://raw.githubusercontent.com/icis-org/registry/main/packages/UtinyRipper.ici",
       "homepage": ""
     },
     {
